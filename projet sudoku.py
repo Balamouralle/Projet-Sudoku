@@ -314,7 +314,6 @@ def vérifier_si_termine():
 
 def mettre_a_jour_erreur_label():
     erreur_label.config(text=f"Erreurs commises : {erreurs}")
-    global temps_debut
 
 # Met à jour le label de temps écoulé toutes les secondes
 
