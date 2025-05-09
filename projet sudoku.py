@@ -136,6 +136,7 @@ def vérifier_valeur(e, lin, col): #
         return
     if not val.isdigit() or not (1 <= int(val) <= 9):
         entrées[lin][col].config(bg="red")
+         entrées[lin][col].delete(0,tk.End)
         afficher_message("La valeur saisie, doit être un chiffre de 1 à 9.")
         return
     if int(val) != solution[lin][col]:
